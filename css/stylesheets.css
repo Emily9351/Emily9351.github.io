@@ -15,6 +15,17 @@
     clear: both; 
 }
 
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links p {
+    letter-spacing: 8px;
+    text-indent: 8px;
+}
+
 .no-bullets {
     list-style-type: none;
 }
@@ -27,4 +38,8 @@ hr {
     margin-right: auto;
     border-style: inset;
     border-width: 1px;
+}
+
+img {
+    width: 100vw;
 }
