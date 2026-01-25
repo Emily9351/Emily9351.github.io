@@ -4,25 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
-    <link rel="stylesheet" href="css/dashboard.css">
 </head>
 
 <br>
     <h1>Pizza Ordering Form</h1>
-    <br>
     <h2>Contact Information</h2>
     <br>
         <label for="name">Name:   </label>
-            <input type="text" id="name" name="name"><br>
+            <input type="text" id="name" name="name" required><br>
         <label for="phone">Phone: </label>
-            <input type="text" id="phone" name="phone"><br>
+            <input type="text" id="phone" name="phone" required><br>
         <label for="email">Email: </label>
-            <input type="text" id="email" name="email"><br>
+            <input type="text" id="email" name="email" required><br>
+
+    <h2>Select Pizza Sauce</h2>
+        <label for="size">Pizza Size:</label>
+            <select id="size" name="size" required>
+                <option value="" disabled selected hidden>--Select Size--</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="xlarge">XLarge</option>
+            </select>
+    
+    <h2>Select Sauce</h2>
+        <input type="radio" id="marinara" name="sauce" required>
+            <label for="marinara">Marinara</label><br>
+        <input type="radio" id="ranch" name="sauce">
+            <label for="ranch">Ranch</label><br>
+        <input type="radio" id="nosauce" name="sauce">
+            <label for="nosauce">No Sauce</label><br>
+        
+    <h2>Select Toppings</h2>
+        <input type="checkbox" id="pepperoni" name="topping">
+            <label for="pepperoni">Pepperoni</label>
+        <input type="checkbox" id="sausage" name="topping">
+            <label for="sausage">Sausage</label><br>
+        <input type="checkbox" id="mushroom" name="topping">
+            <label for="mushroom">Mushroom</label>
+        <input type="checkbox" id="pineapple" name="topping">
+            <label for="pineapple">Pineapple</label><br>
+        <input type="checkbox" id="peppers" name="topping">
+            <label for="peppers">Peppers</label>
+        <input type="checkbox" id="onions" name="topping">
+            <label for="onions">Onions</label><br>
+    
+    <h2>Additional Instructions</h2>
+        <textarea id="text" name="text" aria-label="text" placeholder="Add Instructions"></textarea>
+    <br>
+
+    <button type="submit">Submit</button>
     </form>
     <br>
-    <h2>Select Pizza Sauce</h2>
-    
+    <br>
+
     <table border=1>
+        <caption>List of My Favorite Games</caption>
         <tr>
             <th>Developer</th>
             <th>Title</th>
