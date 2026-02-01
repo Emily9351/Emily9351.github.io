@@ -1,0 +1,63 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+#paragraph2 {
+    background: white;
+    padding: 20px;
+    border-color: green;
+    border-style: solid;
+    margin-right: 20vw;
+    line-height: 2;
+}
+
+.blue {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+}
+
+li::marker {
+    font-size: 20px;
+}
+
+p a {
+    color: darkred;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: lightgrey;
+    padding: 0;
+    height: auto;
+    line-height: normal;
+    whitespace: nowrap;
+    text-align: center;
+}
