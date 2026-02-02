@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+main {
+    margin-left: 15%;
+    min-width: calc(100% - 150px);
+    width: auto;
+    padding: 100px 20px 20px 20px; 
+    display: flex;
+    flex-direction: column;
+}
+
+#jumpMenu {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    width: 15%;           
+    min-width: 150px;     
+    height: calc(100vh - 80px); 
+    background-color: lightblue;
+    color: black;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+#jumpMenu h2 {
+    margin-bottom: 10px;
+}
+
+#jumpMenu a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#jumpMenu a:hover {
+    text-decoration: underline;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    background-color: black;
+    color: white;
+    z-index: 1000;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+header nav {
+    display: flex;
+    gap: 10px;
+}
+
+header nav button {
+    padding: 8px 16px;
+    background-color: teal;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+header nav button:hover {
+    background-color: cadetblue;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+article {
+    width: 300px;
+    background-color: lightgrey;
+    padding: 15px;
+    border-radius: 8px;
+    scroll-margin-top: 100px;
+}
+
+article h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+article p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+#thanks {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: cadetblue;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: teal;
+    color: white;
+}
+
+footer p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer address div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+footer a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 1000px) {
+    #jumpMenu {
+        width: 20%;     
+        min-width: 120px;
+    }
+
+    main {
+        margin-left: 20%;
+        min-width: calc(100% - 120px);
+    }
+}
+
