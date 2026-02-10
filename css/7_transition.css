@@ -140,3 +140,41 @@ nav button:hover {
     background-color: white;
     color: #0033ff;
 }
+
+#thanks {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: cadetblue;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: teal;
+    color: white;
+}
+
+footer p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer address div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+footer a {
+    color: darkblue;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
