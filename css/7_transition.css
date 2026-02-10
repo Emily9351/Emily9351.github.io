@@ -93,7 +93,6 @@ nav button {
     cursor: pointer;
     transition: background-color 0.3s;
     display: flex;
-    margin: 10px auto;
 }
 
 nav button:hover {
@@ -127,7 +126,6 @@ nav button:hover {
 
 #jumpMenu li a {
     display: block;
-    padding: 10px;
     color: white;
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
