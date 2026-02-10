@@ -3,7 +3,6 @@ header {
     top: 0;
     right: 0;   
     left: max(15%, 120px);
-    width: 100vw; 
     background-color: black;
     color: white;
     z-index: 1000;
