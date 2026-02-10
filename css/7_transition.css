@@ -91,9 +91,9 @@ a[href*="google.com"]::after {
     width: 14px;
     height: 14px;
     margin-left: 6px;
-    background-color: black;
-    mask: url("https://upload.wikimedia.org/wikipedia/commons/6/6d/Arrow_right.svg") no-repeat center;
-    mask-size: contain;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/d/da/Codex_icon_newWindow.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 
