@@ -1,3 +1,42 @@
+header {
+    position: fixed;
+    top: 0;
+    right: 0;   
+    left: max(15%, 120px);
+    width: 100vw; 
+    background-color: black;
+    color: white;
+    z-index: 1000;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+header nav button {
+    padding: 8px 16px;
+    background-color: teal;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+#jumpMenu {
+    position: fixed;
+    left: 0;
+    width: 15%;
+    min-width: max(15%, 120px);            
+    height: 100vh; 
+    background-color: lightblue;
+    color: black;
+    padding: 20px;
+    overflow-y: auto;
+}
+
 
 article {
     color: #b3b3b3;           
