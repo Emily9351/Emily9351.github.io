@@ -50,12 +50,16 @@ main {
     height: 100vh; 
     background-color: lightblue;
     color: black;
-    padding: 20px;
     overflow-y: auto;
+    top: 0;
 }
 
 
 article {
+    width: 300px;
+    padding: 15px;
+    border-radius: 8px;
+    scroll-margin-top: 100px;
     color: #b3b3b3;           
     transition: 
         transform 2s,
@@ -103,6 +107,7 @@ nav button {
     transition: background-color 0.3s;
     display: flex;
     margin-bottom: 10px;
+    margin: 10%;
 }
 
 nav button:hover {
