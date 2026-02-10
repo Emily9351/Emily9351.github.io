@@ -85,16 +85,15 @@ article p a {
     font-size: inherit;
 }
 
-
 a[href*="google.com"]::after {
     content: "";
     display: inline-block;
     width: 14px;
     height: 14px;
     margin-left: 6px;
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6d/Arrow_right.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-color: black;
+    mask: url("https://upload.wikimedia.org/wikipedia/commons/6/6d/Arrow_right.svg") no-repeat center;
+    mask-size: contain;
 }
 
 
