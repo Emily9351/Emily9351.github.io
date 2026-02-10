@@ -13,18 +13,6 @@ header {
     align-items: center;
 }
 
-
-header nav button {
-    padding: 8px 16px;
-    background-color: teal;
-    border: none;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: background-color 0.3s;
-}
-
 main {
     margin-left: max(15%, 120px);
     min-width: calc(100% - 120px);
@@ -105,8 +93,7 @@ nav button {
     cursor: pointer;
     transition: background-color 0.3s;
     display: flex;
-    margin-bottom: 10px;
-    margin: 10%;
+    margin: 10px auto;
 }
 
 nav button:hover {
