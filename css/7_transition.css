@@ -1,14 +1,15 @@
+
 article {
-    color: #aaa;
-    max-height: 160px;
-    overflow: hidden;
-    transition: color 2s, max-height 2s;
+    color: #b3b3b3;           
+    transition: 
+        transform 2s,
+        color 2s;
 }
 
 
 article:hover {
     color: #333;
-    max-height: 1000px; 
+    transform: scale(1.05);
 }
 
 
@@ -20,16 +21,16 @@ article p:first-of-type::first-letter {
 
 
 article p a {
-    font-size: inherit;
     font-family: inherit;
+    font-size: inherit;
 }
 
 
 a[href*="google.com"]::after {
     content: "";
     display: inline-block;
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     margin-left: 6px;
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6d/Arrow_right.svg");
     background-size: contain;
@@ -37,20 +38,17 @@ a[href*="google.com"]::after {
 }
 
 
-nav {
-    position: relative;
-}
-
 nav button {
-    background-color: #eee;
+    background-color: #0033ff;
+    color: white;
     border: none;
-    padding: 10px 14px;
+    padding: 12px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 nav button:hover {
-    background-color: #ccc;
+    background-color: #001f99;
 }
 
 
@@ -58,10 +56,8 @@ nav button:hover {
     list-style: none;
     padding: 0;
     margin: 0;
-    position: absolute;
     display: none;
-    background-color: #f5f5f5;
-    border: 1px solid #ccc;
+    background-color: #0033ff;
 }
 
 #recentArticles:hover + #jumpMenu,
@@ -72,13 +68,13 @@ nav button:hover {
 
 #jumpMenu li a {
     display: block;
-    padding: 8px 12px;
+    padding: 10px;
+    color: white;
     text-decoration: none;
-    color: #333;
     transition: background-color 0.3s, color 0.3s;
 }
 
 #jumpMenu li a:hover {
-    background-color: #333;
-    color: #fff;
+    background-color: white;
+    color: #0033ff;
 }
