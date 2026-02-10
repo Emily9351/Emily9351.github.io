@@ -122,9 +122,19 @@ nav button:hover {
     background-color: #0033ff;
 }
 
+
 #recentArticles:hover + #jumpMenu,
 #jumpMenu:hover {
     display: block;
+}
+
+#jumpMenu::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
 }
 
 
