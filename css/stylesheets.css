@@ -1,5 +1,157 @@
 * {
     font-family: "Times New Roman", Times, serif;
+}
+
+.header h1 {
+    margin-bottom: 0.3em;
+}
+.header {
+    position: relative;
+    z-index: 1;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;  
+    color: #000000;
+    clear: both; 
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links p {
+    letter-spacing: 8px;
+    text-indent: 8px;
+}
+
+.no-bullets {
+    list-style-type: none;
+}
+
+hr {
+    display: block;
+    margin-top: -1em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
+img {
+    width: 100vw;
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .links a {
+        font-size: 1em;
+        margin: 5px 0;
+    }
+
+    .objective h2 {
+        font-size: 1.5em;
+    }
+
+    .objective h3 {
+        font-size: 1.1em;
+    }
+
+
+    .education h2 {
+        font-size: 1.5em;
+    }
+
+
+    .experience h2 {
+        font-size: 1.5em;
+    }
+
+
+    .projects h2 {
+        font-size: 1.5em;
+    }
+
+
+    .technical-skills h2, .skills h2 {
+        font-size: 1.5em;
+    }
+
+    ul li {
+        font-size: 1.1em;
+    }
+
+
+    .header, .objective, .education, .experience, .projects, .technical-skills, .skills {
+        padding: 10px;
+        margin: 0 5%;
+    }
+
+    .links {
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+
+@media (min-width: 1920px) {
+    .header h1 {
+        font-size: 3em;
+    }
+
+    .links a {
+        font-size: 1.2em;
+    }
+
+    
+    .objective h2 {
+        font-size: 2em;
+    }
+
+    .objective h3 {
+        font-size: 1.2em;
+    }
+
+    
+    .education h2 {
+        font-size: 2em;
+    }
+
+    
+    .experience h2 {
+        font-size: 2em;
+    }
+
+    
+    .projects h2 {
+        font-size: 2em;
+    }
+
+    
+    .technical-skills h2, .skills h2 {
+        font-size: 2em;
+    }
+
+    
+    ul li {
+        font-size: 1.3em;
+    }
+
+    
+    .header, .objective, .education, .experience, .projects, .technical-skills, .skills {
+        padding: 20px 10%;
+        margin-bottom: 40px;
+    }
+}
+
+
+* {
+    font-family: "Times New Roman", Times, serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
