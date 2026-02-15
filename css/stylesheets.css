@@ -1,157 +1,5 @@
 * {
     font-family: "Times New Roman", Times, serif;
-}
-
-.header h1 {
-    margin-bottom: 0.3em;
-}
-.header {
-    position: relative;
-    z-index: 1;
-    flex-direction: column;
-    align-items: center; 
-    text-align: center;  
-    color: #000000;
-    clear: both; 
-}
-
-.links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.links p {
-    letter-spacing: 8px;
-    text-indent: 8px;
-}
-
-.no-bullets {
-    list-style-type: none;
-}
-
-hr {
-    display: block;
-    margin-top: -1em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
-}
-
-img {
-    width: 100vw;
-}
-
-@media (max-width: 768px) {
-    .header h1 {
-        font-size: 2em;
-    }
-
-    .links a {
-        font-size: 1em;
-        margin: 5px 0;
-    }
-
-    .objective h2 {
-        font-size: 1.5em;
-    }
-
-    .objective h3 {
-        font-size: 1.1em;
-    }
-
-
-    .education h2 {
-        font-size: 1.5em;
-    }
-
-
-    .experience h2 {
-        font-size: 1.5em;
-    }
-
-
-    .projects h2 {
-        font-size: 1.5em;
-    }
-
-
-    .technical-skills h2, .skills h2 {
-        font-size: 1.5em;
-    }
-
-    ul li {
-        font-size: 1.1em;
-    }
-
-
-    .header, .objective, .education, .experience, .projects, .technical-skills, .skills {
-        padding: 10px;
-        margin: 0 5%;
-    }
-
-    .links {
-        justify-content: center;
-        gap: 10px;
-    }
-}
-
-
-@media (min-width: 1920px) {
-    .header h1 {
-        font-size: 3em;
-    }
-
-    .links a {
-        font-size: 1.2em;
-    }
-
-    
-    .objective h2 {
-        font-size: 2em;
-    }
-
-    .objective h3 {
-        font-size: 1.2em;
-    }
-
-    
-    .education h2 {
-        font-size: 2em;
-    }
-
-    
-    .experience h2 {
-        font-size: 2em;
-    }
-
-    
-    .projects h2 {
-        font-size: 2em;
-    }
-
-    
-    .technical-skills h2, .skills h2 {
-        font-size: 2em;
-    }
-
-    
-    ul li {
-        font-size: 1.3em;
-    }
-
-    
-    .header, .objective, .education, .experience, .projects, .technical-skills, .skills {
-        padding: 20px 10%;
-        margin-bottom: 40px;
-    }
-}
-
-
-* {
-    font-family: "Times New Roman", Times, serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -163,15 +11,12 @@ img {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: #2C3E50;
-    background-color: #F5F5F5;
     padding: 20px 10px;
     border-bottom: 3px solid #BDC3C7;
 }
 
 .header h1 {
     margin-bottom: 0.3em;
-    color: #2980B9;
 }
 
 .links {
@@ -183,13 +28,8 @@ img {
 }
 
 .links a {
-    color: #2980B9;
     text-decoration: none;
     font-size: 1.1em;
-}
-
-.links a:hover {
-    color: #C0392B;
 }
 
 .links p {
@@ -203,7 +43,6 @@ section {
 }
 
 .objective {
-    background-color: #ECF0F1;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -211,63 +50,53 @@ section {
 
 .objective h2 {
     font-size: 2em;
-    color: #2C3E50;
 }
 
 .objective h3 {
-    color: #7F8C8D;
+    font-size: 1.1em;
 }
 
 .education {
-    background-color: #F9F9F9;
     padding: 20px;
     border-radius: 8px;
-    border-left: 5px solid #2980B9;
+    border-left: 5px solid #BDC3C7;
 }
 
 .education h2 {
     font-size: 2em;
-    color: #2C3E50;
 }
 
 .experience {
-    background-color: #FDFEFE;
     padding: 20px;
     border-radius: 8px;
-    border-left: 5px solid #2980B9;
+    border-left: 5px solid #BDC3C7;
 }
 
 .experience h2 {
     font-size: 2em;
-    color: #2C3E50;
 }
 
 .projects {
-    background-color: #F9F9F9;
     padding: 20px;
     border-radius: 8px;
-    border-left: 5px solid #2980B9;
+    border-left: 5px solid #BDC3C7;
 }
 
 .projects h2 {
     font-size: 2em;
-    color: #2C3E50;
 }
 
 .technical-skills {
-    background-color: #FDFEFE;
     padding: 20px;
     border-radius: 8px;
-    border-left: 5px solid #2980B9;
+    border-left: 5px solid #BDC3C7;
 }
 
 .technical-skills h2 {
     font-size: 2em;
-    color: #2C3E50;
 }
 
 .skills {
-    background-color: #ECF0F1;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -275,11 +104,10 @@ section {
 
 .skills h2 {
     font-size: 2em;
-    color: #2C3E50;
 }
 
 button {
-    background-color: #2980B9;
+    background-color: #BDC3C7;
     color: white;
     border: none;
     border-radius: 2em;
@@ -292,15 +120,15 @@ button {
 }
 
 button:hover {
-    background-color: #C0392B;
+    background-color: #BDC3C7;
 }
 
 .cancel-button {
-    background-color: #E74C3C;
+    background-color: #BDC3C7;
 }
 
 .cancel-button:hover {
-    background-color: #D62C1A;
+    background-color: #BDC3C7;
 }
 
 @media (max-width: 768px) {
