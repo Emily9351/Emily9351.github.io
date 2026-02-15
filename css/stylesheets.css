@@ -44,7 +44,7 @@ img {
     width: 100vw;
 }
 
-@media (max-width: 412px) {
+@media (max-width: 599px) {
 
     h2 {
         background-color: beige;
