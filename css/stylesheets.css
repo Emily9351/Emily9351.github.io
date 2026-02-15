@@ -1,4 +1,3 @@
-/* Global Reset */
 * {
     font-family: "Times New Roman", Times, serif;
     margin: 0;
@@ -6,22 +5,21 @@
     box-sizing: border-box;
 }
 
-/* Header */
 .header {
     position: relative;
     z-index: 1;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: #2C3E50; /* Dark Blue */
-    background-color: #F5F5F5; /* Light Gray Background */
+    color: #2C3E50;
+    background-color: #F5F5F5;
     padding: 20px 10px;
-    border-bottom: 3px solid #BDC3C7; /* Border between header and body */
+    border-bottom: 3px solid #BDC3C7;
 }
 
 .header h1 {
     margin-bottom: 0.3em;
-    color: #2980B9; /* Blue color for header */
+    color: #2980B9;
 }
 
 .links {
@@ -29,17 +27,17 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 10px; /* Space between links */
+    gap: 10px;
 }
 
 .links a {
-    color: #2980B9; /* Blue links */
+    color: #2980B9;
     text-decoration: none;
     font-size: 1.1em;
 }
 
 .links a:hover {
-    color: #C0392B; /* Red color on hover */
+    color: #C0392B;
 }
 
 .links p {
@@ -47,18 +45,16 @@
     text-indent: 8px;
 }
 
-/* Section Styling */
 section {
     padding: 15px;
     margin-bottom: 20px;
 }
 
-/* Objective Section */
 .objective {
-    background-color: #ECF0F1; /* Light Gray */
+    background-color: #ECF0F1;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .objective h2 {
@@ -67,15 +63,14 @@ section {
 }
 
 .objective h3 {
-    color: #7F8C8D; /* Light Gray */
+    color: #7F8C8D;
 }
 
-/* Education Section */
 .education {
-    background-color: #F9F9F9; /* Light Gray */
+    background-color: #F9F9F9;
     padding: 20px;
     border-radius: 8px;
-    border-left: 5px solid #2980B9; /* Blue left border */
+    border-left: 5px solid #2980B9;
 }
 
 .education h2 {
@@ -83,12 +78,11 @@ section {
     color: #2C3E50;
 }
 
-/* Experience Section */
 .experience {
-    background-color: #FDFEFE; /* Almost White */
+    background-color: #FDFEFE;
     padding: 20px;
     border-radius: 8px;
-    border-left: 5px solid #2980B9; /* Blue left border */
+    border-left: 5px solid #2980B9;
 }
 
 .experience h2 {
@@ -96,12 +90,11 @@ section {
     color: #2C3E50;
 }
 
-/* Project Section */
 .projects {
-    background-color: #F9F9F9; /* Light Gray */
+    background-color: #F9F9F9;
     padding: 20px;
     border-radius: 8px;
-    border-left: 5px solid #2980B9; /* Blue left border */
+    border-left: 5px solid #2980B9;
 }
 
 .projects h2 {
@@ -109,12 +102,11 @@ section {
     color: #2C3E50;
 }
 
-/* Technical Skills Section */
 .technical-skills {
-    background-color: #FDFEFE; /* Almost White */
+    background-color: #FDFEFE;
     padding: 20px;
     border-radius: 8px;
-    border-left: 5px solid #2980B9; /* Blue left border */
+    border-left: 5px solid #2980B9;
 }
 
 .technical-skills h2 {
@@ -122,12 +114,11 @@ section {
     color: #2C3E50;
 }
 
-/* Skills Section */
 .skills {
-    background-color: #ECF0F1; /* Light Gray */
+    background-color: #ECF0F1;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .skills h2 {
@@ -135,9 +126,8 @@ section {
     color: #2C3E50;
 }
 
-/* Button Styling */
 button {
-    background-color: #2980B9; /* Blue */
+    background-color: #2980B9;
     color: white;
     border: none;
     border-radius: 2em;
@@ -150,18 +140,17 @@ button {
 }
 
 button:hover {
-    background-color: #C0392B; /* Red */
+    background-color: #C0392B;
 }
 
 .cancel-button {
-    background-color: #E74C3C; /* Red */
+    background-color: #E74C3C;
 }
 
 .cancel-button:hover {
-    background-color: #D62C1A; /* Darker Red */
+    background-color: #D62C1A;
 }
 
-/* Mobile Specific Styling */
 @media (max-width: 768px) {
     .header h1 {
         font-size: 2em;
@@ -202,7 +191,6 @@ button:hover {
         gap: 10px;
     }
 
-    /* Add additional spacing for mobile */
     section {
         padding: 10px;
     }
@@ -217,7 +205,6 @@ button:hover {
     }
 }
 
-/* Tablet (Medium-sized screens) */
 @media (min-width: 768px) and (max-width: 1200px) {
     .header h1 {
         font-size: 2.5em;
@@ -236,7 +223,6 @@ button:hover {
         margin-bottom: 30px;
     }
 
-    /* Create a Two-Column Layout for medium screens (Tablet View) */
     .experience, .projects, .technical-skills {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -247,13 +233,11 @@ button:hover {
         padding-left: 20px;
     }
 
-    /* Add borders between sections */
     .experience, .projects, .technical-skills {
-        border-left: 3px solid #BDC3C7; /* Light Gray border */
+        border-left: 3px solid #BDC3C7;
     }
 }
 
-/* Desktop/Laptop Specific Styling */
 @media (min-width: 1920px) {
     .header h1 {
         font-size: 3em;
@@ -264,4 +248,41 @@ button:hover {
     }
 
     .objective h2 {
-        font-size:
+        font-size: 2em;
+    }
+
+    .experience h2 {
+        font-size: 2em;
+    }
+
+    .education h2 {
+        font-size: 2em;
+    }
+
+    .projects h2 {
+        font-size: 2em;
+    }
+
+    .technical-skills h2, .skills h2 {
+        font-size: 2em;
+    }
+
+    ul li {
+        font-size: 1.3em;
+    }
+
+    .header, .objective, .education, .experience, .projects, .technical-skills, .skills {
+        padding: 20px 10%;
+        margin-bottom: 40px;
+    }
+
+    .experience, .projects, .technical-skills {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .experience ul, .projects ul, .technical-skills ul {
+        padding-left: 20px;
+    }
+}
