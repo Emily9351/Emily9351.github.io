@@ -1,24 +1,45 @@
+/* Global Reset */
 * {
     font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.header h1 {
-    margin-bottom: 0.3em;
-}
+/* Header */
 .header {
     position: relative;
     z-index: 1;
     flex-direction: column;
-    align-items: center; 
-    text-align: center;  
-    color: #000000;
-    clear: both; 
+    align-items: center;
+    text-align: center;
+    color: #2C3E50; /* Dark Blue */
+    background-color: #F5F5F5; /* Light Gray Background */
+    padding: 20px 10px;
+    border-bottom: 3px solid #BDC3C7; /* Border between header and body */
+}
+
+.header h1 {
+    margin-bottom: 0.3em;
+    color: #2980B9; /* Blue color for header */
 }
 
 .links {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between links */
+}
+
+.links a {
+    color: #2980B9; /* Blue links */
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.links a:hover {
+    color: #C0392B; /* Red color on hover */
 }
 
 .links p {
@@ -26,24 +47,121 @@
     text-indent: 8px;
 }
 
-.no-bullets {
-    list-style-type: none;
+/* Section Styling */
+section {
+    padding: 15px;
+    margin-bottom: 20px;
 }
 
-hr {
-    display: block;
-    margin-top: -1em;
-    margin-bottom: 0.5em;
-    margin-left: auto;
-    margin-right: auto;
-    border-style: inset;
-    border-width: 1px;
+/* Objective Section */
+.objective {
+    background-color: #ECF0F1; /* Light Gray */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
 }
 
-img {
-    width: 100vw;
+.objective h2 {
+    font-size: 2em;
+    color: #2C3E50;
 }
 
+.objective h3 {
+    color: #7F8C8D; /* Light Gray */
+}
+
+/* Education Section */
+.education {
+    background-color: #F9F9F9; /* Light Gray */
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #2980B9; /* Blue left border */
+}
+
+.education h2 {
+    font-size: 2em;
+    color: #2C3E50;
+}
+
+/* Experience Section */
+.experience {
+    background-color: #FDFEFE; /* Almost White */
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #2980B9; /* Blue left border */
+}
+
+.experience h2 {
+    font-size: 2em;
+    color: #2C3E50;
+}
+
+/* Project Section */
+.projects {
+    background-color: #F9F9F9; /* Light Gray */
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #2980B9; /* Blue left border */
+}
+
+.projects h2 {
+    font-size: 2em;
+    color: #2C3E50;
+}
+
+/* Technical Skills Section */
+.technical-skills {
+    background-color: #FDFEFE; /* Almost White */
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #2980B9; /* Blue left border */
+}
+
+.technical-skills h2 {
+    font-size: 2em;
+    color: #2C3E50;
+}
+
+/* Skills Section */
+.skills {
+    background-color: #ECF0F1; /* Light Gray */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+.skills h2 {
+    font-size: 2em;
+    color: #2C3E50;
+}
+
+/* Button Styling */
+button {
+    background-color: #2980B9; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 2em;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+button:hover {
+    background-color: #C0392B; /* Red */
+}
+
+.cancel-button {
+    background-color: #E74C3C; /* Red */
+}
+
+.cancel-button:hover {
+    background-color: #D62C1A; /* Darker Red */
+}
+
+/* Mobile Specific Styling */
 @media (max-width: 768px) {
     .header h1 {
         font-size: 2em;
@@ -58,25 +176,17 @@ img {
         font-size: 1.5em;
     }
 
-    .objective h3 {
-        font-size: 1.1em;
+    .experience h2 {
+        font-size: 1.5em;
     }
-
 
     .education h2 {
         font-size: 1.5em;
     }
 
-
-    .experience h2 {
-        font-size: 1.5em;
-    }
-
-
     .projects h2 {
         font-size: 1.5em;
     }
-
 
     .technical-skills h2, .skills h2 {
         font-size: 1.5em;
@@ -86,20 +196,64 @@ img {
         font-size: 1.1em;
     }
 
-
-    .header, .objective, .education, .experience, .projects, .technical-skills, .skills {
-        padding: 10px;
-        margin: 0 5%;
-    }
-
     .links {
         flex-direction: column;
         justify-content: center;
         gap: 10px;
     }
+
+    /* Add additional spacing for mobile */
+    section {
+        padding: 10px;
+    }
+
+    .header {
+        padding: 15px;
+        border-bottom: 2px solid #BDC3C7;
+    }
+
+    .objective, .education, .experience, .projects, .technical-skills, .skills {
+        margin-bottom: 20px;
+    }
 }
 
+/* Tablet (Medium-sized screens) */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .header h1 {
+        font-size: 2.5em;
+    }
 
+    .links a {
+        font-size: 1.1em;
+    }
+
+    .objective h2, .experience h2, .education h2, .projects h2 {
+        font-size: 1.8em;
+    }
+
+    .objective, .education, .experience, .projects, .technical-skills, .skills {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+
+    /* Create a Two-Column Layout for medium screens (Tablet View) */
+    .experience, .projects, .technical-skills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .experience ul, .projects ul, .technical-skills ul {
+        padding-left: 20px;
+    }
+
+    /* Add borders between sections */
+    .experience, .projects, .technical-skills {
+        border-left: 3px solid #BDC3C7; /* Light Gray border */
+    }
+}
+
+/* Desktop/Laptop Specific Styling */
 @media (min-width: 1920px) {
     .header h1 {
         font-size: 3em;
@@ -109,45 +263,5 @@ img {
         font-size: 1.2em;
     }
 
-    
     .objective h2 {
-        font-size: 2em;
-    }
-
-    .objective h3 {
-        font-size: 1.2em;
-    }
-
-    
-    .education h2 {
-        font-size: 2em;
-    }
-
-    
-    .experience h2 {
-        font-size: 2em;
-    }
-
-    
-    .projects h2 {
-        font-size: 2em;
-    }
-
-    
-    .technical-skills h2, .skills h2 {
-        font-size: 2em;
-    }
-
-    
-    ul li {
-        font-size: 1.3em;
-    }
-
-    
-    .header, .objective, .education, .experience, .projects, .technical-skills, .skills {
-        padding: 20px 10%;
-        margin-bottom: 40px;
-    }
-}
-
-
+        font-size:
