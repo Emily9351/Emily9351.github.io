@@ -27,7 +27,7 @@ function showAddNew() {
     filterForm.style.display = "none";
 
     if (addForm.style.display === "none") {
-        addForm.style.display = "block";
+        addForm.style.display = "flex";
     } else {
         addForm.style.display = "none";
     }
