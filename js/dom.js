@@ -107,7 +107,7 @@ function addNewArticle() {
     newArticle.appendChild(heading);
     newArticle.appendChild(paragraph);
 
-    document.getElementById("articleList").prepend(newArticle);
+    document.getElementById("articleList").appendChild(newArticle);
 
     document.getElementById("inputHeader").value = "";
     document.getElementById("inputArticle").value = "";
