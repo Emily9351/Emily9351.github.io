@@ -1,5 +1,8 @@
-const cache = {}; // caching API responses
+const cache = {};
 let currentPokemon = null;
+
+// Placeholder image URL
+const placeholderImage = "https://via.placeholder.com/200?text=No+Pokemon";
 
 // Fetch Pokemon Data
 async function fetchPokemon() {
@@ -16,7 +19,7 @@ async function fetchPokemon() {
         if (!response.ok) throw new Error("Pokemon not found");
 
         const data = await response.json();
-        cache[query] = data; // cache response
+        cache[query] = data;
         displayPokemon(data);
 
     } catch (err) {
@@ -35,19 +38,22 @@ function displayPokemon(data) {
 
     // Pokemon Image
     const img = document.createElement("img");
-    img.src = data.sprites.front_default;
+    img.src = data.sprites.front_default || placeholderImage;
     display.appendChild(img);
 
-    // Pokemon Audio (cry)
+    // Audio Cry
     const audio = document.createElement("audio");
     audio.controls = true;
+
     const pokemonId = data.id;
     audio.src = `https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/${pokemonId}.ogg`;
+
     display.appendChild(document.createElement("br"));
     display.appendChild(audio);
 
     // Moves Dropdowns
     moveContainer.innerHTML = "<h4>Select 4 Moves</h4>";
+
     const moves = data.moves.map(m => m.move.name);
 
     for (let i = 0; i < 4; i++) {
@@ -67,7 +73,6 @@ function displayPokemon(data) {
         });
 
         moveContainer.appendChild(select);
-        moveContainer.appendChild(document.createElement("br"));
     }
 }
 
@@ -83,7 +88,7 @@ function addToTeam() {
 
     const teamMember = {
         name: currentPokemon.name,
-        image: currentPokemon.sprites.front_default,
+        image: currentPokemon.sprites.front_default || placeholderImage,
         moves: selectedMoves.slice(0, 4)
     };
 
@@ -91,6 +96,7 @@ function addToTeam() {
     renderTeam();
 }
 
+// Render Team Display
 function renderTeam() {
     const teamDisplay = document.getElementById("teamDisplay");
     teamDisplay.innerHTML = "";
@@ -115,3 +121,7 @@ function renderTeam() {
 // Event Listeners
 document.getElementById("fetchBtn").addEventListener("click", fetchPokemon);
 document.getElementById("addTeamBtn").addEventListener("click", addToTeam);
+
+// Initialize placeholder
+document.getElementById("pokemonDisplay").innerHTML =
+    `<img src="${placeholderImage}" width="200">`;
