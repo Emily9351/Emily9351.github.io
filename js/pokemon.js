@@ -1,10 +1,8 @@
 const cache = {};
 let currentPokemon = null;
 
-// Placeholder image URL
 const placeholderImage = src="../images/pokemon.jpg";
 
-// Fetch Pokemon Data
 async function fetchPokemon() {
     const query = document.getElementById("pokemonInput").value.toLowerCase().trim();
     if (!query) return;
@@ -27,7 +25,6 @@ async function fetchPokemon() {
     }
 }
 
-// Display Pokemon Image, Audio, Moves Dropdowns
 function displayPokemon(data) {
     currentPokemon = data;
 
@@ -113,10 +110,8 @@ function renderTeam() {
     });
 }
 
-// Event Listeners
 document.getElementById("fetchBtn").addEventListener("click", fetchPokemon);
 document.getElementById("addTeamBtn").addEventListener("click", addToTeam);
 
-// Initialize placeholder
 document.getElementById("pokemonDisplay").innerHTML =
     `<img src="${placeholderImage}" width="200">`;
