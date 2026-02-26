@@ -1,33 +1,15 @@
-body{
+body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+    margin: 30px;
 }
 
-.container{
-    text-align: center;
-    width: 400px;
-    padding: 30px;
-}
-
-#pokemonDisplay img{
+#pokemonDisplay img {
     width: 200px;
-    height: 200px;
-    object-fit: contain;
-    margin-top: 15px;
 }
 
-#moveSelectors select{
-    display: block;
-    margin: 8px auto;
-    padding: 5px;
-}
-
-.team-card{
+.team-card {
     border: 1px solid #ccc;
     padding: 10px;
-    margin: 12px auto;
+    margin: 10px 0;
     width: 250px;
-    border-radius: 8px;
 }
