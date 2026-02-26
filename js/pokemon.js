@@ -36,12 +36,10 @@ function displayPokemon(data) {
 
     display.innerHTML = "";
 
-    // Pokemon Image
     const img = document.createElement("img");
     img.src = data.sprites.front_default || placeholderImage;
     display.appendChild(img);
 
-    // Audio Cry
     const audio = document.createElement("audio");
     audio.controls = true;
 
@@ -51,7 +49,6 @@ function displayPokemon(data) {
     display.appendChild(document.createElement("br"));
     display.appendChild(audio);
 
-    // Moves Dropdowns
     moveContainer.innerHTML = "<h4>Select 4 Moves</h4>";
 
     const moves = data.moves.map(m => m.move.name);
@@ -76,7 +73,6 @@ function displayPokemon(data) {
     }
 }
 
-// Add Pokemon to Team
 const team = [];
 
 function addToTeam() {
@@ -96,7 +92,6 @@ function addToTeam() {
     renderTeam();
 }
 
-// Render Team Display
 function renderTeam() {
     const teamDisplay = document.getElementById("teamDisplay");
     teamDisplay.innerHTML = "";
