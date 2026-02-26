@@ -2,7 +2,7 @@ const cache = {};
 let currentPokemon = null;
 
 // Placeholder image URL
-const placeholderImage = "https://via.placeholder.com/200?text=No+Pokemon";
+const placeholderImage = "https://cdn-eu.anidb.net/images/main/29531.jpg";
 
 // Fetch Pokemon Data
 async function fetchPokemon() {
